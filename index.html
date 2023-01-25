@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinelas Pedidos</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tudo">
+        <form class="grid" action="#" method="get" onsubmit="abrirWhatsapp()" name="form">
+            <input id="mesa" name="mesa" type="text" placeholder="Mesa">
+        
+            <div id="divH">
+                <label for="div1" id="labelHospede">Hospede</label>
+                <input type="radio" id="div1" name="consulta" value="1">
+            </div>
+
+            <div id="divP">
+                <label for="div2" id="labelPassante">Passante</label>
+                <input type="radio" id="div2" name="consulta" value="2">
+            </div>
+
+            <div id="m1" hidden>
+                <input id="numeroQuarto" name="numeroQuarto" type="text" placeholder="Numero do Quarto">
+            </div>
+            <div id="m2" hidden>
+                <input id="nome" name="nome" type="text" placeholder="Nome do Passante">
+            </div>
+
+            <h2 id="pratos">Pratos</h2>
+            <select name="prato1" id="prato1">
+                <option value="0">Nenhum</option>
+                <option value="Filé de peixe">Filé de peixe</option>
+                <option value="Carne assada">Carne assada</option>
+            </select>
+            <select name="prato2" id="prato2">
+                <option value="0">Nenhum</option>
+                <option value="Filé de peixe">Filé de peixe</option>
+                <option value="Carne assada">Carne assada</option>
+            </select>
+            <select name="prato3" id="prato3">
+                <option value="0">Nenhum</option>
+                <option value="Filé de peixe">Filé de peixe</option>
+                <option value="Carne assada">Carne assada</option>
+            </select>
+            <select name="prato4" id="prato4">
+                <option value="0">Nenhum</option>
+                <option value="Filé de peixe">Filé de peixe</option>
+                <option value="Carne assada">Carne assada</option>
+            </select>
+            <select name="prato5" id="prato5">
+                <option value="0">Nenhum</option>
+                <option value="Filé de peixe">Filé de peixe</option>
+                <option value="Carne assada">Carne assada</option>
+            </select>
+
+            <h2>Bebidas Alcolicas</h2>
+            <select name="alcool1" id="alcool1">
+                <option value="0">Nenhum</option>
+                <option value="Caipirinha">Caipirinha</option>
+                <option value="Caipirinha">Gin</option>
+            </select>
+            <select name="alcool2" id="alcool2">
+                <option value="0">Nenhum</option>
+                <option value="Caipirinha">Caipirinha</option>
+                <option value="Caipirinha">Gin</option>
+            </select>
+            <select name="alcool3" id="alcool3">
+                <option value="0">Nenhum</option>
+                <option value="Caipirinha">Caipirinha</option>
+                <option value="Caipirinha">Gin</option>
+            </select>
+            <select name="alcool4" id="alcool4">
+                <option value="0">Nenhum</option>
+                <option value="Caipirinha">Caipirinha</option>
+                <option value="Caipirinha">Gin</option>
+            </select>
+            <select name="alcool5" id="alcool5">
+                <option value="0">Nenhum</option>
+                <option value="Caipirinha">Caipirinha</option>
+                <option value="Caipirinha">Gin</option>
+            </select>
+
+            <h2>Bebidas Não Alcolicas</h2>
+            <select name="semalcool1" id="semalcool1">
+                <option value="0">Nenhum</option>
+                <option value="Agua">Agua</option>
+                <option value="Coca-cola">Coca-cola</option>
+            </select>
+            <select name="semalcool2" id="semalcool2">
+                <option value="0">Nenhum</option>
+                <option value="Agua">Agua</option>
+                <option value="Coca-cola">Coca-cola</option>
+            </select>
+            <select name="semalcool3" id="semalcool3">
+                <option value="0">Nenhum</option>
+                <option value="Agua">Agua</option>
+                <option value="Coca-cola">Coca-cola</option>
+            </select>
+            <select name="semalcool4" id="semalcool4">
+                <option value="0">Nenhum</option>
+                <option value="Agua">Agua</option>
+                <option value="Coca-cola">Coca-cola</option>
+            </select>
+            <select name="semalcool5" id="semalcool5">
+                <option value="0">Nenhum</option>
+                <option value="Agua">Agua</option>
+                <option value="Coca-cola">Coca-cola</option>
+            </select>
+
+            <h2>Sobremesa</h2>
+            <select name="sobremesa1" id="sobremesa1">
+                <option value="0">Nenhum</option>
+                <option value="1">Doce de leite</option>
+                <option value="2">Pudim</option>
+            </select>
+            <select name="sobremesa2" id="sobremesa2">
+                <option value="0">Nenhum</option>
+                <option value="1">Doce de leite</option>
+                <option value="2">Pudim</option>
+            </select>
+            <select name="sobremesa3" id="sobremesa3">
+                <option value="0">Nenhum</option>
+                <option value="1">Doce de leite</option>
+                <option value="2">Pudim</option>
+            </select>
+            <select name="sobremesa4" id="sobremesa4">
+                <option value="0">Nenhum</option>
+                <option value="1">Doce de leite</option>
+                <option value="2">Pudim</option>
+            </select>
+            <select name="sobremesa5" id="sobremesa5">
+                <option value="0">Nenhum</option>
+                <option value="1">Doce de leite</option>
+                <option value="2">Pudim</option>
+            </select>
+
+
+            <textarea id="msg" name="mensagem" placeholder="Observações gerais" cols="30" rows="10"></textarea>
+
+            <input id="button"  class="button" name="submit" type="submit" value="ENVIAR">
+        
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

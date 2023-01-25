@@ -1,0 +1,62 @@
+*{
+    width: 100%;
+}
+
+#tudo {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#mesa {
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+#divH {
+    width: 10em;
+    margin: 2em auto 1em;
+}
+
+#labelHospede {
+    display: inline-flexbox;
+}
+
+#div1 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+}
+
+#divP {
+    width: 10em;
+    margin: 1em auto;
+    
+}
+
+#labelPassante {
+    display: inline-flexbox;
+}
+
+#div2 {
+    display: inline-flex;
+    width: 40%;
+    vertical-align: middle;
+}
+
+#pratos {
+    margin-top: 2em;
+}
+
+#msg {
+    margin-top: 3em;
+}
+
+#button {
+    margin-top: 2em;
+    height: 5em;
+    width: 100%;
+}
+
+select {
+    margin-top: 1em;
+}
