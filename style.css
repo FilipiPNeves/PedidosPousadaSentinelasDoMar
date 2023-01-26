@@ -82,6 +82,157 @@ select {
     text-align: center;
 }
 
-#botaoAdd {
+#centralizarBotaoAdd {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 2em;
     
+}
+
+#botaoAdd {
+    width: 100%;
+    height: 5em;
+}
+
+.botaoAdd {
+    width: 100%;
+    height: 5em;
+}
+
+/*CSS pratos*/
+
+#prato1 {
+
+}
+
+#prato2 {
+    display: none;
+}
+
+#prato3 {
+    display: none;
+}
+
+#prato4 {
+    display: none;
+}
+
+#prato5 {
+    display: none;
+}
+
+#prato6 {
+    display: none;
+}
+
+#prato7 {
+    display: none;
+}
+
+#prato8 {
+    display: none;
+}
+
+
+
+/*Css Alcools*/
+
+#alcool1 {
+
+}
+
+#alcool2 {
+    display: none;
+}
+
+#alcool3 {
+    display: none;
+}
+
+#alcool4 {
+    display: none;
+}
+
+#alcool5 {
+    display: none;
+}
+
+#alcool6 {
+    display: none;
+}
+
+#alcool7 {
+    display: none;
+}
+
+#alcool8 {
+    display: none;
+}
+
+/*Css NÃO Alcools*/
+
+#semalcool1 {
+
+}
+
+#semalcool2 {
+    display: none;
+}
+
+#semalcool3 {
+    display: none;
+}
+
+#semalcool4 {
+    display: none;
+}
+
+#semalcool5 {
+    display: none;
+}
+
+#semalcool6 {
+    display: none;
+}
+
+#semalcool7 {
+    display: none;
+}
+
+#semalcool8 {
+    display: none;
+}
+
+/*Css NÃO Alcools*/
+
+#sobremesa1 {
+
+}
+
+#sobremesa2 {
+    display: none;
+}
+
+#sobremesa3 {
+    display: none;
+}
+
+#sobremesa4 {
+    display: none;
+}
+
+#sobremesa5 {
+    display: none;
+}
+
+#sobremesa6 {
+    display: none;
+}
+
+#sobremesa7 {
+    display: none;
+}
+
+#sobremesa8 {
+    display: none;
 }
