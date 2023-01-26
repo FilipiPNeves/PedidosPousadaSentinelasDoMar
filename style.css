@@ -3,7 +3,7 @@
 }
 
 #tudo {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -34,6 +34,7 @@
     display: inline-block;
     vertical-align: middle;
     width: 40%;
+    
 }
 
 #divP {
@@ -52,16 +53,31 @@
     vertical-align: middle;
 }
 
+#numeroQuarto {
+    text-align: center;
+    height: 2em;
+}
+
+#nome {
+    text-align: center;
+    height: 2em;
+}
+
 #tittle {
-    margin-top: 2em;
+    margin-top: 3em;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #tittlee {
     margin-top: 3em;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #msg {
     margin-top: 3em;
+    text-align: center;
 }
 
 #uppercase {
