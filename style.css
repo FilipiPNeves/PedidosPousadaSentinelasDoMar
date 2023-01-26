@@ -14,12 +14,13 @@
 
 
 #mesa {
-    margin-top: 3em;
+    margin-top: 2em;
     margin-bottom: 1em;
     height: 2em;
     text-align: center;
     font-size: larger;
 }
+
 
 #divH {
     width: 10em;
@@ -27,7 +28,6 @@
 }
 
 #labelHospede {
-    display: inline-flexbox;
 }
 
 #div1 {
@@ -43,7 +43,7 @@
 }
 
 #labelPassante {
-    display: inline-flexbox;
+    
 }
 
 #div2 {
@@ -80,4 +80,8 @@ select {
     margin-top: 3em;
     height: 3em;
     text-align: center;
+}
+
+#botaoAdd {
+    
 }

@@ -29,6 +29,160 @@ function abrirWhatsapp() {
     var nome = document.getElementById("nome").value;
     var msg = document.getElementById("msg").value;
 
+
+    var url = "https://wa.me/5522999939162?text=" // Meu numero
+        + "*Pedido*" + "%0a" // Mensagem personalizada
+        + "%0a" // Quebra de linha
+        + "*mesa*: " + mesa + "%0a" // Dados do formulário
+        + "*numeroQuarto*: " + numeroQuarto + "%0a"
+        + "*Nome Passante*: " + nome + "%0a" + "%0a"
+
+
+        //PRATOS IF ELSE
+    if(prato5 != 0) {
+        url +=
+                "*Pratos*" + "%0a"
+                + "*Prato 01*: " + prato1 + "%0a"
+                + "*Prato 02*: " + prato2 + "%0a"
+                + "*Prato 03*: " + prato3 + "%0a"
+                + "*Prato 04*: " + prato4 + "%0a"
+                + "*Prato 05*: " + prato5 + "%0a" + "%0a"
+    }else if(prato4 != 0 ) {
+        url +=
+                "*Pratos*" + "%0a"
+                + "*Prato 01*: " + prato1 + "%0a"
+                + "*Prato 02*: " + prato2 + "%0a"
+                + "*Prato 03*: " + prato3 + "%0a"
+                + "*Prato 04*: " + prato4 + "%0a" + "%0a"
+    }else if(prato3 != 0) {
+        url +=
+                "*Pratos*" + "%0a"
+                + "*Prato 01*: " + prato1 + "%0a"
+                + "*Prato 02*: " + prato2 + "%0a"
+                + "*Prato 03*: " + prato3 + "%0a" + "%0a"
+    }else if(prato2 != 0) {
+        url +=
+                "*Pratos*" + "%0a"
+                + "*Prato 01*: " + prato1 + "%0a"
+                + "*Prato 02*: " + prato2 + "%0a" + "%0a"
+
+    }else if(prato1) {
+        url +=
+                "*Pratos*" + "%0a"
+                + "*Prato 01*: " + prato1 + "%0a" + "%0a"
+    }
+
+    // Bebidas ALcoolicas IF ELSE
+
+    if(alcool5 != 0) {
+        url +=
+                "*Bebidas Alcolicas*" + "%0a"
+                + "*Bebida 01*: " + alcool1 + "%0a"
+                + "*Bebida 02*: " + alcool2 + "%0a"
+                + "*Bebida 03*: " + alcool3 + "%0a"
+                + "*Bebida 04*: " + alcool4 + "%0a"
+                + "*Bebida 05*: " + alcool5 + "%0a" + "%0a"
+
+    }else if(alcool4 != 0 ) {
+        url +=
+                "*Bebidas Alcolicas*" + "%0a"
+                + "*Bebida 01*: " + alcool1 + "%0a"
+                + "*Bebida 02*: " + alcool2 + "%0a"
+                + "*Bebida 03*: " + alcool3 + "%0a"
+                + "*Bebida 04*: " + alcool4 + "%0a" + "%0a"
+    }else if(alcool3 != 0) {
+        url +=
+                 "*Bebidas Alcolicas*" + "%0a"
+                + "*Bebida 01*: " + alcool1 + "%0a"
+                + "*Bebida 02*: " + alcool2 + "%0a"
+                + "*Bebida 03*: " + alcool3 + "%0a" + "%0a"
+    }else if(alcool2 != 0) {
+        url +=
+                 "*Bebidas Alcolicas*" + "%0a"
+                + "*Bebida 01*: " + alcool1 + "%0a"
+                + "*Bebida 02*: " + alcool2 + "%0a" + "%0a"
+
+    }else if(alcool1) {
+        url +=
+                 "*Bebidas Alcolicas*" + "%0a"
+                + "*Bebida 01*: " + alcool1 + "%0a" + "%0a"
+
+    }
+
+    //Bebidas Não Alcoolicas
+
+    if(semalcool5 != 0) {
+        url +=
+                "*Bebidas NÃO Alcolicas*" + "%0a"
+                + "*Bebida 01*: " + semalcool1 + "%0a"
+                + "*Bebida 02*: " + semalcool2 + "%0a"
+                + "*Bebida 03*: " + semalcool3 + "%0a"
+                + "*Bebida 04*: " + semalcool4 + "%0a"
+                + "*Bebida 05*: " + semalcool5 + "%0a" + "%0a"
+
+    }else if(semalcool4 != 0 ) {
+        url +=
+                "*Bebidas NÃO Alcolicas*" + "%0a"
+                + "*Bebida 01*: " + semalcool1 + "%0a"
+                + "*Bebida 02*: " + semalcool2 + "%0a"
+                + "*Bebida 03*: " + semalcool3 + "%0a"
+                + "*Bebida 04*: " + semalcool4 + "%0a" + "%0a"
+    }else if(semalcool3 != 0) {
+        url +=
+                "*Bebidas NÃO Alcolicas*" + "%0a"
+                + "*Bebida 01*: " + semalcool1 + "%0a"
+                + "*Bebida 02*: " + semalcool2 + "%0a"
+                + "*Bebida 03*: " + semalcool3 + "%0a" + "%0a"
+    }else if(semalcool2 != 0) {
+        url +=
+                "*Bebidas NÃO Alcolicas*" + "%0a"
+                + "*Bebida 01*: " + semalcool1 + "%0a"
+                + "*Bebida 02*: " + semalcool2 + "%0a" + "%0a"
+
+    }else if(semalcool1) {
+        url +=
+                "*Bebidas NÃO Alcolicas*" + "%0a"
+                + "*Bebida 01*: " + semalcool1 + "%0a" + "%0a"
+    }
+
+
+    //Sobremesas
+
+    if(sobremesa5 != 0) {
+        url +=
+                "*Sobremesas*" + "%0a"
+                + "*Sobremesa 01*: " + sobremesa1 + "%0a"
+                + "*Sobremesa 02*: " + sobremesa2 + "%0a"
+                + "*Sobremesa 03*: " + sobremesa3 + "%0a"
+                + "*Sobremesa 04*: " + sobremesa4 + "%0a"
+                + "*Sobremesa 05*: " + sobremesa5 + "%0a" + "%0a"
+
+    }else if(sobremesa4 != 0 ) {
+        url +=
+                "*Sobremesas*" + "%0a"
+                + "*Sobremesa 01*: " + sobremesa1 + "%0a"
+                + "*Sobremesa 02*: " + sobremesa2 + "%0a"
+                + "*Sobremesa 03*: " + sobremesa3 + "%0a"
+                + "*Sobremesa 04*: " + sobremesa4 + "%0a" + "%0a"
+    }else if(sobremesa3 != 0) {
+        url +=
+                "*Sobremesas*" + "%0a"
+                + "*Sobremesa 01*: " + sobremesa1 + "%0a"
+                + "*Sobremesa 02*: " + sobremesa2 + "%0a"
+                + "*Sobremesa 03*: " + sobremesa3 + "%0a" + "%0a"
+    }else if(sobremesa2 != 0) {
+        url +=
+                "*Sobremesas*" + "%0a"
+                + "*Sobremesa 01*: " + sobremesa1 + "%0a"
+                + "*Sobremesa 02*: " + sobremesa2 + "%0a" + "%0a"
+
+    }else if(sobremesa1) {
+        url +=
+                "*Sobremesas*" + "%0a"
+                + "*Sobremesa 01*: " + sobremesa1 + "%0a" + "%0a"
+    }
+
+    /*
     var url = "https://wa.me/5522999939162?text=" // Meu numero
       + "*Pedido*" + "%0a" // Mensagem personalizada
       + "%0a" // Quebra de linha
@@ -66,11 +220,12 @@ function abrirWhatsapp() {
       
       
       + "*Mensagem*: " + msg;
+
+      */
+
     window.open(url, '_blank').focus();
   }
 
-
-  console.log(div1.checked);
   
   $('input:radio[name="consulta"]').change(function() {
     if ($(this).val() == 1) {
