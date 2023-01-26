@@ -51,6 +51,12 @@
     margin-top: 3em;
 }
 
+#uppercase {
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+}
+
 #button {
     margin-top: 2em;
     height: 5em;
